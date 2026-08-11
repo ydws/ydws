@@ -17,7 +17,7 @@ groundwork before development starts.
 - [x] `CLA.md` (Contributor License Agreement) added
 - [x] CLA enforcement bot (`contributor-assistant/github-action`) configured
 - [x] CLA bot tested end-to-end
-- [ ] Branch protection requiring CLA + CI checks
+- [x] Branch protection (ruleset) requiring PRs + CLA check on `master`
 - [ ] First engineering milestone: terrain sculpt tool + god-view camera
 
 ## License model
