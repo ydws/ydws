@@ -25,6 +25,6 @@ jobs:
           path-to-signatures: "signatures/version1/cla.json"
           path-to-document: "https://github.com/ydws/ydws/blob/master/CLA.md"
           branch: "master"
-          allowlist: "bot*"
+          allowlist: "sanket-pande,bot*"
           remote-organization-name: ""
           remote-repository-name: ""
