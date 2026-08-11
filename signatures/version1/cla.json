@@ -1,3 +1,12 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "sanket-pande",
+      "id": 31108679,
+      "comment_id": 5258039791,
+      "created_at": "2026-08-11T19:46:32Z",
+      "repoId": 665682997,
+      "pullRequestNo": 1
+    }
+  ]
 }
