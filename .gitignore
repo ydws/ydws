@@ -1,1 +1,7 @@
 .vscode/launch.json
+
+# Ignore all markdown files in the project root
+# except README.md and CLA.md which are tracked project docs.
+/*.md
+!/README.md
+!/CLA.md
