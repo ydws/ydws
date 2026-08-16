@@ -63,6 +63,12 @@ Two named modes (aliases from the raw notes: "god mode" → **Genesis Mode**;
 
 - Game logic and UI are kept separate.
 - Multiple different UIs (different styles) can drive the same underlying game.
+- The core game must run with a bare-bones, asset-less UI, or even a pure
+  terminal (text-only) interface — the strongest form of the separation
+  requirement: game logic can never assume any particular rendering/UI
+  exists at all. Terminal (ASCII) art is an acceptable presentation for
+  the terminal interface — the requirement is no dependency on graphical
+  assets, not literally no visuals at all.
 
 **Feasibility:** high, and cheap if adopted from the start.
 - Godot supports this natively: core game state lives in UI-agnostic

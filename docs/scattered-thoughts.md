@@ -16,6 +16,8 @@ Not polished, not authoritative. Promote anything that solidifies into
 - Keep game logic and UI separate.
 - Want multiple separate UIs (different styles) able to work with the same game.
 - Mainly a world builder, but the player can switch into another mode and interact with the actual world.
+- Core game should work even with a basic UI with no assets, or purely with a terminal, as well.
+- Terminal art (ASCII art) is ok for the terminal interface.
 
 ## Beings
 
