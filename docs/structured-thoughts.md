@@ -21,6 +21,21 @@ Two named modes (aliases from the raw notes: "god mode" → **Genesis Mode**;
 - Free, unlimited terraforming/world design — change anything, anywhere, no lag.
 - Regained later after 100 years of game time (placeholder number, tunable —
   only the year count is expected to change).
+- Decisions the player can make in Genesis Mode:
+  1. Size of the planet.
+  2. Star/stars present in the solar system.
+  3. Location of the planet within the solar system.
+  4. Planet's tilt, and magic system(s) on the planet (or no magic system).
+  5. Moon/moons located on the planet.
+  6. Planet terrain (desert/water/etc.) — also depends on the planet's
+     position (from #3).
+  7. Day length / year length (rotation speed / orbital period).
+  8. Gravity strength.
+  9. Water coverage % (ocean vs land ratio).
+  10. Continent/tectonic layout (number of continents, mountain range placement).
+  11. Natural hazards (volcanism, storms, seismic activity) as an ambient
+      risk setting.
+  12. Ring system around the planet (world-flavor option).
 
 ### Mortal Mode
 - Starts once the initial Genesis Mode window closes.

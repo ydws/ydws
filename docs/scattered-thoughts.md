@@ -64,3 +64,16 @@ Not polished, not authoritative. Promote anything that solidifies into
 - More and more people might get obsessed with the player's agelessness and try to murder the player to find his secret.
 - People of the society the player controls don't get obsessed with this — they consider it natural. People of other societies get obsessed.
 - If the player kills a leader of a monarchy or dictatorship, only then can he get back access to another mode.
+- Decisions the player can take in genesis mode:
+  1. Size of the planet
+  2. Star/stars present in the solar system
+  3. Location of the planet within the solar system
+  4. Planet's tilt, magic system(s) on the planet or no magic systems
+  5. Moon/moons located on the planet
+  6. Planet terrain (desert/water, etc.) — also depends on the position of the planet
+  7. Day length / year length (rotation speed / orbital period)
+  8. Gravity strength
+  9. Water coverage % (ocean vs land ratio)
+  10. Continent/tectonic layout (number of continents, mountain range placement)
+  11. Natural hazards (volcanism, storms, seismic activity)
+  12. Ring system around the planet
