@@ -64,6 +64,24 @@ Two named modes (aliases from the raw notes: "god mode" → **Genesis Mode**;
 - Game logic and UI are kept separate.
 - Multiple different UIs (different styles) can drive the same underlying game.
 
+**Feasibility:** high, and cheap if adopted from the start.
+- Godot supports this natively: core game state lives in UI-agnostic
+  autoloads/Resources that emit signals; any UI (a `Control` scene tree)
+  only ever listens to signals / calls a defined API — never reaches into
+  game internals directly. Swapping a whole UI is then just loading a
+  different scene against the same API. Simple restyling (fonts/colors)
+  is handled by Godot `Theme` resources on top of that.
+- The real cost is upfront discipline: defining and sticking to a
+  signals-in/calls-out API surface between game and UI. Cheap if done from
+  the first line of game-logic code, expensive to retrofit later.
+- Synergy: since UI never touches authoritative state directly, moving
+  that state to a server later (multiplayer) is a much shorter hop —
+  same architectural decision serves both goals.
+- Scope note: the separation makes adding a second/third UI *possible and
+  cheap*, not free — each additional UI style is still real work to build.
+  No need to build an actual UI-swapping framework until there's a second
+  UI to swap to; milestone 1 has no need for it yet.
+
 ## Beings
 
 - Game settings control which being types can appear in the world.
