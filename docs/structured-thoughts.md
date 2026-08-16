@@ -1,0 +1,83 @@
+# Structured thoughts
+
+Organizes the raw notes from [`scattered-thoughts.md`](./scattered-thoughts.md)
+into a clearer shape. Still a working design doc, not final — gaps are
+marked `(?)` and get filled in as answers come in.
+
+---
+
+## World
+
+- Shape: a sphere, real planet size.
+- The player can travel all over it (no artificial map boundary).
+
+## Modes
+
+Two named modes (aliases from the raw notes: "god mode" → **Genesis Mode**;
+"player mode" / "interactive mode" → **Mortal Mode**).
+
+### Genesis Mode
+- Active at game start, for an initial 10-minute window.
+- Free, unlimited terraforming/world design — change anything, anywhere, no lag.
+- Regained later after 100 years of game time (placeholder number, tunable —
+  only the year count is expected to change).
+
+### Mortal Mode
+- Starts once the initial Genesis Mode window closes.
+- Two internal sub-modes:
+  - **Wanderer Mode** — roams the world on foot, hands-on terrain shaping
+    with tools (e.g. a shovel).
+  - **Steward Mode** — places buildings for builders to construct
+    (construction limited by builder time, not instant) and governs
+    society (see Society).
+- Player leads/governs all societies they still control (see Society).
+- Player is ageless but not immortal.
+- Death condition: if a society's resentment grows out of control, it riots
+  and kills the player → game over.
+- As the player's agelessness becomes noticed, people outside the societies
+  the player controls may become obsessed with it and try to murder the
+  player to learn their secret. People within the player's own controlled
+  societies consider it natural and don't react this way.
+- If the player gives up (see Society) or loses every society they control,
+  they lose governance/building ability entirely. The only way back in: kill
+  the leader of a monarchy or dictatorship (an assassination, not an army
+  conquest, since the player controls no society to attack with) — this
+  restores a foothold and governance access.
+
+## UI / architecture
+
+- Game logic and UI are kept separate.
+- Multiple different UIs (different styles) can drive the same underlying game.
+
+## Beings
+
+- Game settings control which being types can appear in the world.
+- Types: humanoid, animals, spirits of things, hive-mind beings.
+- Intelligence levels: human, baby, animal, single instinct/rule.
+
+## Society
+
+- Settings define a society type per area: capitalist, communist, slave
+  economy, etc.
+- Rule-adherence spectrum per society:
+  1. Robots — rules always followed exactly.
+  2. Real — most follow rules, some break them.
+  3. Chaotic — most don't follow rules.
+- Every society harbours resentment, driven by both world events (famine,
+  disasters, being behavior, etc.) and the player's own decisions/decrees.
+  If it grows out of control, that society riots and kills the player
+  (see Player mode above).
+- Societies progress through ages (e.g. stone age onward). Every new society
+  starts at stone age, capped at the max age reached by any existing society
+  in the game.
+- The planet can have multiple societies across different areas; the player
+  leads/controls all of them, not just one.
+- The player can give up part or full control of a society by installing a
+  parliament or a different leader. Once given up, that society becomes
+  independent and makes its own decisions.
+- A given-up society can only be reclaimed by conquering it with force,
+  attacking it using another society the player still controls. (If the
+  player controls no societies at all, the recovery path is different —
+  see Mortal Mode above.)
+
+---
